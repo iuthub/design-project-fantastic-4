@@ -1,0 +1,295 @@
+* {
+    
+    box-sizing: border-box;
+    position: relative;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: "Courier New";
+    
+}
+
+p {
+    font-size: 15px;
+}
+
+.header{ /*Main Image here*/
+}
+
+/*Static Menubar that appears at TOP*/
+
+.menuBar{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.menuItems li, a{
+    color: #FFF;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    list-style: none;
+    font-family: "Courier New";
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menuItems a:hover{
+    background-color: #f4f4f4;
+    color: #FFF;
+}
+
+
+.dropdownBtn {
+    
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+/*    z-index: 1;*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+    color: black;
+/*    padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdownBtn {
+    background-color: #f4f4f4;
+}
+
+
+
+/*Content begins here*/
+
+.content {
+    
+}
+
+.overview {
+    display: inline-flex;
+    position: relative;
+    
+    
+}
+
+.container_parameters {
+    text-align: left;
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    max-width: 60%;
+    left: 9em;
+    max-height: 620px;
+    
+}
+
+.container_images {
+    margin-right: 10px;
+    left: 9em;
+    
+}
+.parameters {
+    
+}
+
+.description {
+    
+    display: block;
+    
+}
+
+img {
+    height: 620px;
+    width: 420px;
+}
+
+#amounts {
+    margin-right: 40px;
+}
+
+
+#amounts_buttons *{
+    display: inline-flex;
+}
+
+
+
+#add a{
+    color: black;
+    border: solid;
+    display: inline-block;
+}
+
+#amounts select {
+    width: 150px;
+}
+
+.shortDesc, .content_care, .size_fit {
+    margin-bottom: 10px;
+}
+
+    
+.parameter {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+
+/**Color styling here**/
+
+#colors ul {
+    list-style: none;
+    display: inline-flex;
+    
+}
+
+#colors input[type=radio]{
+   display: none;
+   
+}
+
+#colors input[type=radio]:checked+label {
+    border-radius: 10px 10px;
+    border: black solid 1px;
+    
+    
+}
+
+#colors li label{
+    margin: auto;
+    cursor: pointer;
+}
+
+#colors li label{
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+/**Color styling till here**/
+
+#sizes ul {
+    list-style: none;
+    display: inline-flex;
+    
+}
+
+
+#sizes input[type=radio]{
+   display: none;
+}
+
+#sizes input[type=radio]:checked+label {
+    border-radius: 20px 20px;
+    border: black solid 1px;
+}
+
+#sizes li label{
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+
+
+.images {
+    
+}
+
+
+/*Category elements*/
+
+
+
+
+/*Static Block Footer begins*/
+
+.main {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.footer {
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    color: #f4f4f4;
+    z-index: 10;
+    text-align: center;
+    min-height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer a {
+    
+}
+
+.footer * {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Courier New";
+    font-size: large;
+    
+}
+
+.shop, .follow, .subscribe, .about{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+    
+}
+
+.follow {
+    display: block;
+}
+
+.about {
+    display: block;
+}
+
+.footer p, .footer a {
+    cursor: pointer;
+}
+
+
+#subscribe_button {
+    border: white 1px solid;
+}
+
+/*Static block Footer ends*/

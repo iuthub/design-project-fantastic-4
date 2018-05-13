@@ -1,4 +1,309 @@
-h1{
-	color: blue;
-	font-family: 'Arial', sans-serif;
+* {
+    /*border: solid;*/
+    box-sizing: border-box;
+    position: relative;
 }
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: "Candara";
+}
+
+.header{ /*Main Image here*/
+    background-image: url("Images/gal_gadot1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    width: 100%;
+}
+
+/*Static Menubar that appears at TOP*/
+
+.menuBar{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.reg_sign a {
+    color: white;
+    border: white 2px solid;
+    float: right;
+    bottom: 70px;
+    
+}
+
+.reg_sign {
+    clear: right;
+}
+
+.menuItems li, a{
+    color: #FFF;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    list-style: none;
+    font-family: "Courier New";
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menuItems a:hover{
+    background-color: #f4f4f4;
+    color: #FFF;
+}
+
+
+.dropdownBtn {
+    
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/*    z-index: 1;*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+    color: black;
+/*    padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdownBtn {
+    background-color: #f4f4f4;
+}
+
+
+
+/*Content begins here*/
+
+.content {
+
+}
+
+/*Category elements*/
+
+.categories {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.categoriesOne {
+    display: flex;
+
+
+}
+
+.categoriesTwo{
+    display: flex;
+}
+
+.categoriesElement p{
+    font-family: Calibri;
+    font-style: oblique;
+    font-weight: 500;
+    font-size: medium;
+    text-decoration: underline;
+    display: none;
+    color: #111;
+}
+
+.categoriesElement:hover p{
+    display: block;
+}
+
+.categoriesElement:hover h3{
+    color: #111111;
+}
+
+.categoriesElement:hover h3:before {
+    content: "";
+    position: absolute;
+    left: 24%;
+    right: 25%;
+    top: 0%;
+    height: 20px;
+    width : 50%;
+    border: 3px solid #111;
+    border-radius: 2px;
+
+}
+
+.categoriesElement:hover .categoriesText{
+    background-color: rgba(255,255,255,0.55);
+}
+
+
+.categoriesPic {/*whole image with text*/
+    /*padding: 0px;
+    margin: 0px;*/
+
+}
+
+
+
+.imgItems {/*HTML image element*/
+
+    height: 400px;
+    width: 340px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.categoriesText {
+    position: absolute;
+    top: 0.1%;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 98.5%;
+    text-align: center;
+    padding-top: 8.5em;
+}
+
+.categoriesText h3{
+    color: white;
+    font-weight: 800;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-family: "Courier New";
+}
+
+/*Hot Items block begins*/
+
+.hotItems a{
+    display: inline-flex;
+    
+}
+
+.hotItems {
+    background: #f4f4f4;
+    padding: 2px;
+}
+
+.set {
+    position: relative;
+    
+}
+
+.hotItemsImg {
+    position: relative;
+    height: 350px;
+    width: 270px;
+}
+
+
+
+.hotItemText {
+    position: absolute;
+    width: 96.5%;
+    top: 1.5%;
+    height: 97%;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Courier New", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 100%;
+    padding-top: 7.5em;
+}
+
+.hotItemText a p, a h2{
+    display: none;
+}
+
+.hotItemText a:hover p, a:hover h2 {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hotItemText:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+/*Hot Items block ends*/
+
+
+/*Static Block Footer begins*/
+
+.footer {
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    color: #f4f4f4;
+    z-index: 10;
+    text-align: center;
+    min-height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer * {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Courier New";
+    font-size: large;
+    
+}
+
+.shop, .follow, .subscribe, .about{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+    
+}
+
+.follow {
+    display: block;
+}
+
+.about {
+    display: block;
+}
+
+.footer p, .footer a {
+    cursor: pointer;
+}
+
+
+#subscribe_button {
+    border: white 1px solid;
+}
+
+/*Static block Footer ends*/

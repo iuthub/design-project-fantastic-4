@@ -1,0 +1,35 @@
+fieldset {
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    color: dimgrey;
+    font-family: "Helvetica";
+}
+         
+input {
+    margin-bottom: 0.5em;
+}
+      
+label.regForm {
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    width: 7em;
+}
+
+label.elemName {
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    width: 7em;
+}
+              
+input[type="submit"] {
+    margin-left: 10em;
+    font-weight: bold;
+}
+
+legend {
+    padding: 0.25em;
+}

@@ -1,0 +1,259 @@
+* {
+    /*border: solid;*/
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: "Candara"; 
+    
+}
+
+.header{ /*Main Image here*/
+   height: 750px;
+   width: 100%;
+}
+
+/*Static Menubar that appears at TOP*/
+
+.menuItems{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.menuItems li, a{
+    color: #FFF;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    list-style: none;
+    font-family: "Courier New";
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menuItems a:hover{
+    background-color: #f4f4f4;
+    color: #FFF;
+}
+
+.headerImgs {
+    display: inline-flex;
+}
+
+.headerImgs h2 {
+    font-size: 55px;
+}
+
+.headerImgText {
+    position: absolute;
+    width: 100%;
+    min-width: 40px;
+    bottom: 10em;
+    background-size: 100%;
+    z-index: 5;
+    text-align: center;
+    color: #474747;
+    padding: 3% 0;
+    font-family: cursive;
+}
+
+.caption {
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.paging a {
+    background-color:#222;
+}
+
+.categoriesPic {
+    
+}
+
+.imgItems {
+    height: 400px;
+    width: 340px;
+    margin: 5px;
+    padding: 0px;
+}
+
+.subMenu a, .subMenu li {
+    color: #111;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    list-style: none;
+    font-family: fantasy;
+    font-weight: 400;
+    text-decoration: windowframe;
+}
+
+
+.dropdownBtn {
+    
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    top: 40px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/*    z-index: 1;*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+    color: black;
+/*    padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdownBtn {
+    background-color: #f4f4f4;
+}
+
+
+/*Content begins here*/
+.content {
+    margin: 10px;
+    padding: 5px;
+}
+
+.items {
+    
+    
+    
+}
+
+.set {
+    display: inline-flex;
+}
+
+.product {
+    margin: 5px;
+    width: 25%;
+}
+
+
+
+.itemsImg {
+    width: 100%;
+    
+}
+
+.view {
+    position: absolute;
+    width: 60%;
+    min-width: 40px;
+    left: 20%;
+    bottom: 1.5em;
+    background-size: 100%;
+    z-index: 5;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    padding: 3% 0;
+    font-family: "Calibri";
+    font-size: 12px;
+}
+
+.view a, .view h2{
+    display: none;
+}
+
+.veiw, a:hover h2 {
+    display: block;
+    background-color: rgba(244,244,244,0.5);
+    padding: 7% 0;
+}
+
+.description {
+    font-family: "Arial";
+    color: #222;
+    font-weight: 300;
+    font-size: 100%;
+    text-align: center;
+}
+
+/*Static Block Footer begins*/
+
+.footer {
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    color: #f4f4f4;
+    z-index: 10;
+    text-align: center;
+    min-height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer a {
+    
+}
+
+.footer * {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Courier New";
+    font-size: large;
+    
+}
+
+.shop, .follow, .subscribe, .about{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+    
+}
+
+.follow {
+    display: block;
+}
+
+.about {
+    display: block;
+}
+
+.footer p, .footer a {
+    cursor: pointer;
+}
+
+
+#subscribe_button {
+    border: white 1px solid;
+}
+
+/*Static block Footer ends*/
